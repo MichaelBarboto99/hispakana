@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consonantes - Hispakana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon_hispakana.svg">
+    <style>
+        :root {
+            --primary: #bc002d;
+            --dark: #2d2d2d;
+            --light: #f4f4f4;
+            --white: #ffffff;
+            --accent: #0056b3;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        header {
+            background-color: var(--white);
+            border-bottom: 4px solid var(--primary);
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h1, h2 { color: var(--primary); }
+        h2 { border-bottom: 2px solid var(--light); padding-bottom: 5px; margin-top: 2rem; }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background: var(--white);
+        }
+
+        th {
+            background-color: #eee;
+            color: var(--dark);
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+        }
+
+        .kana {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+
+        .special-note {
+            background: #eef9ff;
+            border-left: 5px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .tag {
+            background: #ddd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">ひすぱかな</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="vocales.html">Vocales</a>
+            <a href="consonantes.html" style="color: var(--primary);">Consonantes</a>
+            <a href="reglas.html">Reglas</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Adaptación de Consonantes</h1>
+        <p>A diferencia de las vocales, las consonantes del español requieren adaptaciones especiales para cubrir sonidos como la <strong>L</strong>, la <strong>Ñ</strong> o la <strong>J</strong> fuerte.</p>
+
+        <!-- Oclusivas -->
+        <h2>1. Oclusivas (P, B, T, D, K, G)</h2>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Sonido</th>
+                    <th>Hiragana (ejemplos)</th>
+                    <th>Katakana (ejemplos)</th>
+                    <th>Notas</th>
+                </tr>
+                <tr>
+                    <td><strong>P</strong></td>
+                    <td class="kana">ぱ ぴ ぷ ぺ ぽ</td>
+                    <td class="kana">パ ピ プ ペ ポ</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td><strong>B / V</strong></td>
+                    <td class="kana">ば び ぶ べ ぼ</td>
+                    <td class="kana">バ ビ ブ ベ ボ</td>
+                    <td>B y V se unifican fonéticamente.</td>
+                </tr>
+                <tr>
+                    <td><strong>T</strong></td>
+                    <td class="kana">た てぃ とぅ て と</td>
+                    <td class="kana">タ ティ トゥ テ ト</td>
+                    <td>Usamos <span class="tag">てぃ</span> para evitar el sonido "chi".</td>
+                </tr>
+                <tr>
+                    <td><strong>D</strong></td>
+                    <td class="kana">だ でぃ どぅ で ど</td>
+                    <td class="kana">ダ ディ ドゥ デ ド</td>
+                    <td>Usamos <span class="tag">でぃ</span> para evitar el sonido "ji".</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Nasales -->
+        <h2>2. Nasales y la letra Ñ</h2>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <td><strong>M</strong></td>
+                    <td class="kana">ま み む め も</td>
+                    <td class="kana">マ ミ ム メ モ</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td><strong>N</strong></td>
+                    <td class="kana">な に ぬ ね の</td>
+                    <td class="kana">ナ ニ ヌ ネ ノ</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td><strong>Ñ</strong> <span class="tag">/ɲ/</span></td>
+                    <td class="kana">にゃ にぃ にゅ にぇ にょ</td>
+                    <td class="kana">ニャ ニィ ニュ ニェ ニョ</td>
+                    <td>Basado en la serie <em>Ny-</em>.</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- El Gran Reto: L y R -->
+        <h2>3. Líquidas: El reto de la L y la R</h2>
+        <div class="special-note">
+            En Hispakana, resolvemos la carencia de la <strong>L</strong> y la <strong>RR</strong> en japonés mediante signos diacríticos.
+        </div>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th>Letra</th>
+                    <th>Hiragana</th>
+                    <th>Katakana</th>
+                    <th>Técnica</th>
+                </tr>
+                <tr>
+                    <td><strong>R (suave)</strong></td>
+                    <td class="kana">ら り る れ ろ</td>
+                    <td class="kana">ラ リ ル レ ロ</td>
+                    <td>Sonido estándar (pero).</td>
+                </tr>
+                <tr>
+                    <td><strong>L</strong></td>
+                    <td class="kana">ら゚ り゚ る゚ れ゚ ろ゚</td>
+                    <td class="kana">ラ゚ リ゚ ル゚ レ゚ ロ゚</td>
+                    <td>Añadimos <strong>Handakuten</strong> (círculo).</td>
+                </tr>
+                <tr>
+                    <td><strong>RR (fuerte)</strong></td>
+                    <td class="kana">っら っり っる っれ っろ</td>
+                    <td class="kana">ッラ ッリ ッル ッレ ッロ</td>
+                    <td>Añadimos <strong>Sokuon</strong> (pequeño tsu).</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Fricativas -->
+        <h2>4. Fricativas (S, Z, J, F, CH)</h2>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <td><strong>S</strong></td>
+                    <td class="kana">さ すぃ す せ そ</td>
+                    <td class="kana">サ スィ ス セ ソ</td>
+                    <td><span class="tag">すぃ</span> evita el sonido "shi".</td>
+                </tr>
+                <tr>
+                    <td><strong>Z / C</strong> <span class="tag">/θ/</span></td>
+                    <td class="kana">さ゚ すぃ゚ す゚ せ゚ そ゚</td>
+                    <td class="kana">サ゚ スィ゚ ス゚ セ゚ ソ゚</td>
+                    <td>Solo para distinción peninsular.</td>
+                </tr>
+                <tr>
+                    <td><strong>J / G</strong> <span class="tag">/x/</span></td>
+                    <td class="kana">は ひ ふ へ ほ</td>
+                    <td class="kana">ハ ヒ フ ヘ ホ</td>
+                    <td>La 'H' japonesa es el sonido más próximo.</td>
+                </tr>
+                <tr>
+                    <td><strong>CH</strong></td>
+                    <td class="kana">ちゃ ち ちゅ ちぇ ちょ</td>
+                    <td class="kana">チャ チ チュ チェ チョ</td>
+                    <td>-</td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Proyecto Hispakana</p>
+    </footer>
+
+</body>
+</html>
